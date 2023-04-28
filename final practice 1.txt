@@ -1,0 +1,190 @@
+//define function
+Int countLowerCaseLettersInFile( const char* filename )
+{
+	//initialize variables
+	char currentChar;
+	int lowerCaseCount;
+	lowerCaseCount = 0;
+	
+	//open file
+		//function: openInputFile
+	openInputFile( filename );
+	
+	//prime while loop
+		/function: readCharacterFromFile
+	currentChar = readCharacterFromFile()
+ 	
+	//while loop to go through file and look for lower case letters
+		//function: checkForInputFile
+	while( !checkForInputFile() )
+	{
+		//if statement to check if character is lowercase
+			//function: isLowerCaseLetter
+		if( isLowerCaseLetter() )
+		{
+			//add 1 to lowercasecount
+			lowerCaseCount++;
+			
+		}
+		
+		//reprime loop
+			//function: isLowerCaseLetter
+		currentChar = readCharacterFromFile();
+	}
+	
+	//close file
+		//function: closeInputFile
+	closeInputFile():
+
+	//return lowercase count
+	return lowerCaseCount;
+}
+	
+
+
+
+
+
+//define function
+Int genRandSum(  int numValues )
+{
+	//initialize variables
+	int oddTotal, currentNum;
+	oddTotal = 0;
+	
+	for(index = 0, index < numValues; index++)
+	{
+	
+		//add values to the array 
+		currentNum = generateRandom();
+		
+
+		//check if number is odd
+		//function: is even
+		if( ! isEven(listOfNum[index]) )
+		{
+			//add number to total
+			total = total + listOfNum[index];
+		}
+	}
+	//return total
+	return Total;	
+			
+}
+
+
+Char findSidetype( int side1, int side2, int side3 )
+{
+	//if statement that checks if all sides are equal
+	if( side1 == side2 && side1 == side3 && side2 == side3)
+	{
+		//return equilateral
+		return EQUILATERAL;
+	}
+		
+	//else if to check if two side are equal
+	else if( side1 == side2 || side1 == side3 || side2 == side3)
+	{
+		//return isosceles
+		return ISOSCELES;
+	}
+	//else if to check if its scalene
+	else if( side1 != side2 && side1 != side3 && side2 != side3)
+	{
+		//return scalene
+		return SCALENE;
+	}
+}
+
+
+
+
+Int getRandBetween( int highLimit, int lowLimit )
+{
+	//initialize variables
+	int randNum;
+	
+	//set the seed for the rand function
+		//function: srand
+	srand( lowLimit );
+	
+	//get the random number 
+		//function: rand	
+	randNum = (rand() % highLimit - lowLimt + 1 );
+
+	//add lowlimit to randNum
+	randNum = randNum + lowLimit;
+
+	//return randNum
+	return randNum;
+}
+	
+
+
+Bool isInString(char *charArray[], char character)
+{
+	//intilize variables
+	int index;
+	index = 0;
+		
+	//while loop that loop through array
+	while(charArray[index] != NUll_CHAR)
+	{
+		//if statement to see if index is = to character
+		if(charArray[index] == character)
+		{
+			//return true
+			return True;
+
+		}
+		//else that adds to index
+		else
+		{
+			//add to index
+			index++;
+		}
+	}
+	
+	//return false
+	return False;
+	
+}
+
+
+Void displayData( struct node *headData )
+{
+	if( headData != NULL)
+	{
+	//while loop that goes through and prints out each element of the linked list
+		while( headData->nextPtr != Null )
+		{
+		
+			//print out the linked list
+				//function: printf
+			printf("%c ", headData->data);
+		
+			//move to the next node
+			headData = headData->next;
+		}
+	}
+	
+
+	else
+	{
+		printf("Linked List is empty");
+	}	
+
+		
+}
+
+
+
+		
+
+
+
+
+
+
+
+
